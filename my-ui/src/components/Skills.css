@@ -6,25 +6,18 @@
 
 .skills-container {
   background: #3f4257;
-
   border: 2px solid rgba(0, 188, 212, 0.25);
-
   border-radius: 25px;
-
   padding: 50px 30px;
-
   overflow: hidden;
 }
 
 .skills-title {
   text-align: center;
-
   font-size: 3rem;
   font-style: italic;
   font-weight: 700;
-
   color: #00bcd4;
-
   margin-bottom: 50px;
 }
 
@@ -32,39 +25,30 @@
   display: flex;
   justify-content: center;
   gap: 25px;
-
   margin-bottom: 30px;
   min-height: auto;
+  flex-wrap: wrap; /* FIXED for responsiveness */
 }
 
 .category-card {
   width: 350px;
   min-height: 220px;
-
   background: rgba(255, 255, 255, 0.05);
-
   backdrop-filter: blur(12px);
-
   border: 1px solid rgba(255, 255, 255, 0.12);
-
   border-radius: 18px;
-
   padding: 22px;
-
   transition: 0.3s ease;
 }
 
 .category-card:hover {
   transform: translateY(-5px);
-
   border-color: rgba(0, 188, 212, 0.5);
 }
 
 .category-card h3 {
   color: #ffffff;
-
   font-size: 1.4rem;
-
   margin-bottom: 18px;
 }
 
@@ -78,29 +62,97 @@
   display: flex;
   align-items: center;
   gap: 8px;
-
   padding: 10px 15px;
-
   border-radius: 999px;
-
   background: rgba(0, 188, 212, 0.08);
-
   border: 1px solid rgba(0, 188, 212, 0.2);
-
   color: #e5e7eb;
-
   font-size: 0.95rem;
-
   transition: 0.3s ease;
 }
 
 .skill-badge:hover {
   background: rgba(0, 188, 212, 0.15);
-
   border-color: #00bcd4;
 }
 
 .skill-badge svg {
   color: #00bcd4;
   font-size: 1.5rem;
+}
+
+
+/* =========================
+   TABLET (FIX START HERE)
+========================= */
+@media (max-width: 992px) {
+
+  .skills-section {
+    width: 95%;
+    padding: 80px 0;
+  }
+
+  .skills-container {
+    padding: 40px 20px;
+  }
+
+  .skills-title {
+    font-size: 2.5rem;
+  }
+
+  .skills-row {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .category-card {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 576px) {
+
+  .skills-section {
+    width: 100%;
+    padding: 60px 15px;
+  }
+
+  .skills-container {
+    padding: 25px 15px;
+  }
+
+  .skills-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .skills-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .category-card {
+    width: 100%;
+    min-height: auto;
+    padding: 18px;
+  }
+
+  .category-card h3 {
+    font-size: 1.2rem;
+  }
+
+  .skill-badge {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+  }
+
+  .skill-badge svg {
+    font-size: 1.2rem;
+  }
 }

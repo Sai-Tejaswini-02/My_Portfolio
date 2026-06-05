@@ -1,0 +1,106 @@
+.navbar-container{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+
+  padding:18px 30px;
+
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);
+
+  border:1px solid rgba(255,255,255,0.15);
+  border-radius:16px;
+  width: 95%;
+  margin: 0 auto;
+  font-family: "Poppins";
+  
+}
+.navbar-container{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 30px;
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  
+}
+
+
+
+.port-logo img {
+  width:60px;
+  height:60px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  color:darkcyan;
+  font-weight: 300;
+
+}
+
+.port-color{
+  color:DarkCyan;
+}
+.nav-links a {
+  color:darkcyan;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 450;
+}
+.navbar-container{
+  animation: navbarFade 0.8s ease-out;
+}
+
+@keyframes navbarFade{
+  from{
+    opacity:0;
+    transform:translateY(-20px);
+  }
+
+  to{
+    opacity:1;
+    transform:translateY(0);
+  }
+}
+
+.port-logo{
+  display:flex;
+  align-items:center;
+  gap:16px;
+
+  font-style:oblique;
+  font-size:26px;
+  font-weight:600;
+}
+
+.nav-links{
+  list-style:none;
+  display:flex;
+  align-items:center;
+  gap:40px;
+}
+
+.nav-links a{
+  color:darkcyan;
+  text-decoration:none;
+  font-size:20px;
+  font-weight:500;
+  transition:all 0.3s ease;
+}
+
+.nav-links a:hover{
+  color:#00ffff;
+}
+
+.nav-links a.active{
+  color:#00ffff;
+}

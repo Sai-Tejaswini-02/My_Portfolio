@@ -1,0 +1,171 @@
+.contact-section {
+  padding: 80px 5%;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  padding: 40px 60px;
+  background: #3f4257;
+  border: 3px solid rgba(4, 73, 105, 0.6);
+  border-radius: 25px;
+}
+
+.contact-heading {
+  text-align: center;
+  color: #00bcd4;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+
+.contact-left {
+  flex: 1;
+}
+
+.contact-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.contact-title {
+  font-size: 2.2rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.contact-text {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: #e5e7eb;
+  margin-bottom: 30px;
+}
+
+.submit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 28px;
+  border: none;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #1f2937;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #00bcd4;
+  color: white;
+}
+
+.success-message {
+  margin-top: 15px;
+  color: #00bcd4;
+  font-weight: 500;
+}
+
+.copy-message {
+  margin-top: 10px;
+  color: #ffffff;
+  font-size: 0.95rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #e5e7eb;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateX(8px);
+}
+
+.contact-item svg {
+  font-size: 1.5rem;
+  color: #00bcd4;
+}
+
+.contact-item span {
+  font-size: 1.1rem;
+}
+
+.contact-item a {
+  text-decoration: none;
+  color: #00bcd4;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}
+
+.contact-item a:hover {
+  color: white;
+}
+
+@media (max-width: 992px) {
+  .contact-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 50px;
+  }
+
+  .contact-details {
+    align-items: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .contact-section {
+    width: 100%;
+    padding: 40px 15px;
+  }
+
+  .contact-container {
+    padding: 25px 20px;
+  }
+
+  .contact-heading {
+    font-size: 2rem;
+  }
+
+  .contact-title {
+    font-size: 1.6rem;
+  }
+
+  .contact-text {
+    font-size: 1rem;
+  }
+
+  .submit-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .contact-item {
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+}
+
+.contact-item span{
+  text-decoration: none;
+  color: #00bcd4;
+  font-size: 1.1rem;
+  transition: 0.3s;
+}

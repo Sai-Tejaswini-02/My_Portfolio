@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background-color:#2A2D3E;;
+  margin-top: 20px;
+  border-radius: 12px;
+  width: 95%;
+  margin: 0 auto;
+  color: #D1D5DB;
+  font-family: "Poppins";
+}
+
+.footer-names {
+  display: flex;
+  gap: 15px;
+}
+

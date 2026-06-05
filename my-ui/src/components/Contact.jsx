@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { MdEmail } from "react-icons/md";
 import { IoCall } from "react-icons/io5";
 import { FaLinkedin, FaGithub, FaPaperPlane } from "react-icons/fa";
-import "./contact.css";
+import "./Contact.css";
 
 function Contact() {
   const [submitted, setSubmitted] = useState(false);

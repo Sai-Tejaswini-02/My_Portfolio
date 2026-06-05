@@ -104,3 +104,94 @@
 .nav-links a.active{
   color:#00ffff;
 }
+
+
+/* =========================
+   TABLET
+========================= */
+@media (max-width: 992px) {
+
+  .navbar-container{
+    padding: 16px 20px;
+  }
+
+  .port-logo{
+    font-size: 22px;
+  }
+
+  .port-logo img{
+    width: 50px;
+    height: 50px;
+  }
+
+  .nav-links{
+    gap: 20px;
+  }
+
+  .nav-links a{
+    font-size: 17px;
+  }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+@media (max-width: 768px) {
+
+  .navbar-container{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    width: 98%;
+  }
+
+  .port-logo{
+    gap: 10px;
+    font-size: 18px;
+  }
+
+  .port-logo img{
+    width: 40px;
+    height: 40px;
+  }
+
+  .nav-links{
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+  }
+
+  .nav-links a{
+    font-size: 14px;
+  }
+}
+
+
+/* =========================
+   VERY SMALL PHONES
+========================= */
+@media (max-width: 480px) {
+
+  .navbar-container{
+    padding: 12px;
+  }
+
+  .port-logo{
+    font-size: 16px;
+  }
+
+  .port-logo img{
+    width: 35px;
+    height: 35px;
+  }
+
+  .nav-links{
+    gap: 8px;
+  }
+
+  .nav-links a{
+    font-size: 12px;
+  }
+}

@@ -3,7 +3,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 20px 30px;
-  background-color:#2A2D3E;;
+  background-color: #2A2D3E;
   margin-top: 20px;
   border-radius: 12px;
   width: 95%;
@@ -12,8 +12,51 @@
   font-family: "Poppins";
 }
 
+
 .footer-names {
   display: flex;
   gap: 15px;
 }
 
+/* =========================
+   TABLET + BELOW 
+========================= */
+@media (max-width: 768px) {
+
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .footer-names {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+}
+
+/* =========================
+   MOBILE (SMALL DEVICES)
+========================= */
+@media (max-width: 576px) {
+
+  .footer {
+    width: 100%;
+    border-radius: 0;
+    padding: 18px 15px;
+  }
+
+  .footer p {
+    font-size: 0.9rem;
+  }
+
+  .footer-names {
+    gap: 10px;
+    font-size: 0.9rem;
+  }
+}

@@ -5,8 +5,7 @@ import About from "./components/About";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
-import Footer from "./components/Footer"; 
-import "./App.css";
+import Footer from "./components/Footer";
 
 function App() {
   const [active, setActive] = useState("home");
@@ -26,10 +25,17 @@ function App() {
     );
 
     sections.forEach((sec) => observer.observe(sec));
+
+    return () => observer.disconnect();
   }, []);
 
   return (
     <>
+      {/* Background Bubbles */}
+      <div className="bubble bubble1"></div>
+      <div className="bubble bubble2"></div>
+      <div className="bubble bubble3"></div>
+
       <Navbar active={active} />
       <Header />
       <About />

@@ -13,14 +13,21 @@ body {
 }
 
 body {
-  background: linear-gradient(
-    135deg,
-    #0f172a,
-    #1e293b,
-    #334155
-  );
   color: white;
   overflow-x: hidden;
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(0, 229, 255, 0.08) 0%,
+      transparent 30%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      rgba(0, 229, 255, 0.05) 0%,
+      transparent 35%
+    ),
+    #07122A;
 }
 
 img {
@@ -67,3 +74,72 @@ section {
   }
 }
 
+
+
+/* Background Bubbles */
+
+.bubble {
+  position: fixed;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: -1;
+
+  background: rgba(255, 255, 255, 0.035);
+
+  backdrop-filter: blur(25px);
+  -webkit-backdrop-filter: blur(25px);
+
+  border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: all 0.4s ease;
+
+}
+
+.bubble1 {
+  width: 320px;
+  height: 320px;
+
+  top: 60px;
+  right: -120px;
+   animation: float 12s ease-in-out infinite;
+}
+
+.bubble2 {
+  width: 220px;
+  height: 220px;
+
+  bottom: 80px;
+  left: -70px;
+   animation: float 15s ease-in-out infinite;
+}
+
+.bubble3 {
+  width: 150px;
+  height: 150px;
+
+  top: 55%;
+  right: 8%;
+  animation: float 10s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.bubble:hover{
+    background: rgba(69, 199, 213, 0.08);
+  border: 1px solid rgba(0, 229, 255, 0.25);
+
+  box-shadow:
+    0 0 20px rgba(0, 229, 255, 0.15),
+    0 0 40px rgba(0, 229, 255, 0.08);
+}
